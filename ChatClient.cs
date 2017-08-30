@@ -25,6 +25,7 @@ class ChatClient
         // TO DO:
         // Add code to register your event handlers
         chat.Join += new JoinHandler(OnJoinChat);
+        chat.Quit += new QuitHandler(OnQuit);
 
         // Call methods on the server
         chat.JoinChat("Michael");
